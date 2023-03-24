@@ -7,25 +7,50 @@
     <title>Formulário</title>
 </head>
 <style>
-    *{
-        font-family: Arial, Helvetica, sans-serif;
+    *{font-family: Arial, Helvetica, sans-serif;
+       background-color: rgb(49, 49, 49);
+       color: white;
+    text-align: center;}
+    #inome, #isnome {border-radius: 20px;}
+    fieldset{border-radius: 20px;}
+    
+    div fieldset {
+        width: 200px;
+        margin: auto;
     }
-    #inome, #isnome{
-        border-radius: 22px;
-        border: 1px solid rgb(51, 1, 1);
-        text-align: justify;
-    }
+    
+    
 </style>
 <body>
-    <h1>Primeiro Formulário</h1>
-    <form action="cdt.php">
-        <p><label for="inome">Nome:</label> 
-            <input type="text" name="nome" id="inome"></p>
-        <p><label for="isnome">Sobrenome:</label> 
-            <input type="text" name="snome" id="isnome"></p>
-        <p>
-            <input type="submit" value="Enviar"></p>
-    </form>
+    <h1>Crie sua Conta</h1>
+    <fieldset>
+        <legend>Segue o Cadastro</legend>
+        <form action="cdt.php">
+            <p><label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome"></p>
+            <p><label for="isnome">Sobrenome:</label>
+                <input type="text" name="snome" id="isnome"></p>
+            <p><label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail"></p>
+            <p><label for="isen">Senha:</label>
+                <input type="password" name="sen" id="isen"></p>
+            <p><label for="idata">Data de Nascimento:</label>
+                <input type="date" name="data" id="idata"></p>
+            <p> <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel"></p>
+                <p> <div>
+                    <fieldset> <legend>Sexo</legend>
+                        <label for="im" >Masculino<input type="radio" name="sexo" id="im"></label><br>
+                         <label for="if" >Feminino<input type="radio" name="sexo" id="if"></label><br>
+                         <label for="ielu" >Não Binário<input type="radio" name="sexo" id="ielu"></label></p>
+                    </fieldset>
+                </div>
+                <p>
+                <input type="submit" value="Enviar"></p>
+        
+        
+        </form>
+    </fieldset>
     
 </body>
 </html>
