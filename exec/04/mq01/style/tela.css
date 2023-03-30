@@ -1,0 +1,48 @@
+@charset "Utf8";
+/* Para Telas*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+html {
+    font-family: sans-serif;
+    font-size: 1em;
+}
+header h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3em;
+    padding: 30px;
+    background-image: linear-gradient(to top, rgb(141, 135, 127),  rgb(59, 57, 57));
+    color: white;
+}
+menu ul {
+    background-color: rgb(141, 135, 127);
+    padding: 10px;
+}
+menu li {
+    display: inline-block;
+    margin: 3px;
+    background-color: rgb(124, 119, 112);
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+
+}
+article {
+    display: block;
+    margin: auto;
+    width: 400px;
+    background-color: rgb(233, 233, 233);
+    padding: 20px;
+    border-radius: 30px;
+    line-height: 1.4em
+
+}
+article h2 {
+    text-align: center;
+    padding: 0px 20px 30px;
+}
