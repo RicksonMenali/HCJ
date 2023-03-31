@@ -14,10 +14,10 @@ header  {
     background-color: rgb(141, 135, 127);
     padding-bottom: 10px;}
 header h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:'Times New Roman', Times, serif;
     text-align: center;
     font-weight: bolder;
-    font-size: 3em;
+    font-size: 4em;
     padding: 30px;
     background-image: linear-gradient(to top, rgb(141, 135, 127),  rgb(59, 57, 57));
     color: white;
