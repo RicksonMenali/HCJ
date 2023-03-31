@@ -1,5 +1,5 @@
 @charset "Utf8";
-/* Para Telas*/
+/* mobile first*/
 
 *{
     margin: 0px;
@@ -45,12 +45,20 @@ menu li {
 article {
     display: block;
     margin: auto;
-    width: 400px;
+    width: 80vw;
     background-color: rgb(233, 233, 233);
     padding: 20px;
     border-radius: 30px;
     line-height: 1.4em
 
+}
+article div {
+    width: 80vw;
+    height: 200px;
+    background-image: url(/exec/04/imagens/back-print.jpg);
+    background-size: cover;
+    background-position: bottom right;
+    
 }
 article h2 {
     text-align: center;
