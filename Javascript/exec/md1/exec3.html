@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    var N1 = prompt('Informe o primeiro numero');
+    var SN = prompt('Qual o sinal da operação?');
+    while( SN != '+' && SN != '-' && SN != '/' && SN != '*'){
+        alert('Tu é Anal?')
+        SN = prompt ('Qual o sinal da operação?');
+    }
+    var N2 = prompt('Informe o Numero final');
+
+    N1 = parseInt(N1);
+    N2 = parseInt(N2);
+
+    if(SN == '+'){
+        R = N1 + N2;
+    }else if (SN == '-'){
+        R = N1 - N2;
+    }else if(SN == '*'){
+        R = N1 * N2;
+    }else if(SN == '/'){
+        R = N1 / N2;
+    }
+alert('A resposta é ' +R)
+
+</script>
+<body>
+    
+</body>
+</html>
