@@ -1,0 +1,43 @@
+<html lang="pt-br">
+
+
+<body>
+  
+    <div class="box">aaa</div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    
+
+    
+</body>
+<script>
+
+//var p = document.getElementsByTagName('p');
+
+//alert(p[1].innerHTML);
+var elementos = document.getElementsByClassName('box');
+/*
+var el = elementos[0];
+
+el.style.width = 100;
+el.style.height = 100;
+el.style.marginLeft = 300;
+el.style.backgroundColor = 'red';
+*/
+for (var i = 0; i < elementos.length; i++){
+    var el = elementos[i];
+
+    el.style.width = 100;
+    el.style.height = 100;
+    el.style.backgroundColor = 'red';
+    el.style.margin = 20;
+    el.style.borderWidth = 3;
+    el.style.borderColor = 'black';
+    el.style.borderStyle = 'solid';
+}
+
+
+
+</script>
+</html>

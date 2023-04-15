@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style/tela.css" media="screen">
+    <link rel="stylesheet" href="style/impress.css" media="print">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body onresize="width2()">
+    <header>
+        <h1>Notícias</h1>
+        <i id="burg" class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+        </i>
+        <menu id="itens">
+            <ul> <!--ul>li*3 ATALHO PARA GERAR AUTOMATICAMENTE -->
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Politica</a></li>
+                <li><a href="#">Tecnologia</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+
+        </menu>
+    </header>
+    <main>
+        <article class="conteudo">
+            <h2>Criando Media Queries <span>Ver Mais</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, minima ipsa omnis facilis, expedita
+                maxime qui pariatur quisquam neque eaque consequuntur quas, veniam similique assumenda sint quam facere
+                iure iste?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, magni provident? Magni iste
+                autem reiciendis pariatur laborum accusantium nihil dicta obcaecati a sed commodi debitis praesentium
+                maxime, ea quam maiores!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolorem laudantium vitae quidem optio
+                similique non autem ipsam? Molestiae fugiat dicta facerequibusdamitaque consequatur repudiandae rerum
+                harum obcaecati ipsam.lorem </p>
+                <div>.</div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam vel ut consectetur. Necessitatibus odit alias accusantium ullam temporibus minus dolor perspiciatis! Libero, itaque perferendis sed dolore odit eveniet maxime totam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, laborum dolore. Perspiciatis ipsa quasi itaque assumenda mollitia! Deserunt ratione molestiae quis dicta aut inventore quasi est sint, ea, commodi magni.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolorum iure voluptas alias? Illum voluptate aspernatur est quasi eum omnis impedit laborum, fuga magni veniam tempora veritatis dignissimos deserunt dolorum!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur natus iste eum enim quos inventore dolorem maiores sint esse magnam aspernatur minima, beatae laborum libero dolore est fugit rem cupiditate! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati earum, quo quidem odio amet dolor nam eligendi soluta fuga veritatis placeat atque non iste voluptates consectetur voluptatem sint. Corrupti, consectetur!</p>
+        </article>
+    </main>
+    <script>
+        function width2() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+        var span = document.querySelector('.conteudo span')
+        
+        span.addEventListener('click',function(){
+          var conteudo = document.querySelector('.conteudo');
+
+                if(conteudo.classList.contains('mostr')){
+                    span.innerHTML = 'Ver Mais';
+                    conteudo.classList.remove('mostr');
+                }else{
+                    conteudo.classList.add('mostr')
+                    span.innerHTML = 'Ocultar';
+                }
+        });
+    </script>
+
+</body>
+
+</html>
