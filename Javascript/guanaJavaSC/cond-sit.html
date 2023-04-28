@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasc</title>
+</head>
+<style>
+    body {
+        background-color: rgb(59, 59, 59);
+        color: white;
+    }
+</style>
+
+<body>
+    <h1>Nacionalidade</h1>
+    <input type="text" id="txpais">
+    <input type="button" value="Checar" onclick="cauc()">
+    <div id="res"></div>
+    <script>
+        function cauc() {
+            var pais = window.document.getElementById('txpais')
+            var res = window.document.getElementById('res')
+            res.innerHTML = `<p>Seu país é <strong>${pais.value}</strong></p>`
+            if (pais.value == 'brasil') {
+                res.innerHTML += `voce é Brasileiro`
+            } else {
+                res.innerHTML += 'voce é Estrangeiro'
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
