@@ -1,29 +1,51 @@
 @charset "utf-8";
 
-body {
-    background-color: rgb(61, 61, 139);
+body { 
+    background-image: url(img/dia.jpg);
+    background-repeat: no-repeat;
+    background-size: 200vmin;
+
+    
     color: white;
+    text-shadow: 5px 3px 8px  black
+    
+    
+   
+}
+body::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.651);
+    opacity: 0.6;
 }
 header {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(240, 240, 240);
     
 }
 section {
-    background-color: azure;
+    opacity: 1.0;
+    background-color: white;
     border-radius: 20px;
     height: 500px;
     width: 700px;
     margin: auto;
     color: black;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 10px #02020280;
+    text-shadow: none;
 }
 div#msg {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
     margin: auto;
     color: black;
     text-align: center;
-    width: 100px;
-    height: 90px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    
 }
 img {
     width: 300px;
