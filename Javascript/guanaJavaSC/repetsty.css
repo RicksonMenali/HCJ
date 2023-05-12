@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(63, 50, 48);
+}
+section{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    width: 500px;
+    height: 250px;
+    text-align: center
+}
+div#contagem{
+    margin: 10px;
+    background-color: rgb(177, 159, 159);
+    padding: 8px;
+    border-radius: 5px;
+    color: white;
+    
+    
+}
