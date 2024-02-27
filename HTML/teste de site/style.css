@@ -14,7 +14,7 @@ img#logo1 {
     padding: 0px;
     margin: auto;
     height: 50%;
-    width: 70%;
+    width: 350px;
     text-align: center;
     display: block
 }
@@ -28,16 +28,21 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 10px;
+    
 }
 
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
+
+    padding: 10px;
+    border-radius: 10px;
 }
 
 nav ul li a:hover {
     color: #5595BE;
+    border: 1px solid #5595BE;
 }
 
 main {
@@ -45,19 +50,23 @@ main {
 }
 
 section.container {
-    display: inline;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    border: 1px solid black;
-    height: 200px;
-    width: 200px;;
-    
+
 }
 
 section.container div.item a {
     text-decoration: none;
     display: flex;
-    border: 1px solid black;
-    padding: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    padding: 40px;
+    margin: 2px;
+    width: 10vw;
+    justify-content:center;
 
 
     border-radius: 15px;
@@ -65,9 +74,28 @@ section.container div.item a {
     color: #ffffff;
 
 }
-
+section.container div.item a.l1 {
+    background-color: #FFCC00;
+}
+section.container div.item a.l2 {
+    background-color: #FF7518;
+}
+section.container div.item a.l3 {
+    background-color: #03A7E4;
+}
+section.container div.item a:hover {
+    background-color: #00478F;
+}
 section {
     margin-bottom: 20px;
+}
+section.bene {
+    margin-bottom: 100px;
+    border-end-end-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 10px;
+    background-color: #d1effa;
+
 }
 
 section h2 {
