@@ -1,3 +1,4 @@
+@charset "utf-8";
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,16 +8,17 @@ body {
 header {
     background-color: #00478F;
     color: #fff;
-    padding: 20px;
+    padding: 1px;
+    
 }
 
 img#logo1 {
     padding: 0px;
-    margin: auto;
+    margin: auto ;
     height: 50%;
     width: 350px;
     text-align: center;
-    display: block
+    display: block;
 }
 
 
@@ -37,12 +39,13 @@ nav ul li a {
     text-decoration: none;
 
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 nav ul li a:hover {
-    color: #5595BE;
+    color:#00478F;
     border: 1px solid #5595BE;
+    background-color: #d2f0fb;
 }
 
 main {
@@ -75,6 +78,8 @@ section.container div.item a {
 
 }
 section.container div.item a.l1 {
+    
+    
     background-color: #FFCC00;
 }
 section.container div.item a.l2 {
